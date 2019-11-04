@@ -13,6 +13,6 @@ class Song < ActiveRecord::Base
     if drake exists!
       drake = Artist.new(name: "Drake")
     else
-      
+      self
   end
 end
