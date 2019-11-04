@@ -14,8 +14,8 @@ class Genre < ActiveRecord::Base
 
   def all_artist_names
     # binding.pry
-    self.artists do |name|
-      artists.name
+    self.artists do |artist|
+      artist.name
     end
   end
 end
